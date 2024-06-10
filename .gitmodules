@@ -1,0 +1,23 @@
+[submodule "DRAM_Row_Hammer_Test/dependencies/litedram"]
+	path = DRAM_Row_Hammer_Test/dependencies/litedram
+	url = https://github.com/tylerricks377/litedram
+	branch = rw_b
+[submodule "DRAM_Row_Hammer_Test/dependencies/litex"]
+	path = DRAM_Row_Hammer_Test/dependencies/litex
+	url = https://github.com/tylerricks377/litex
+	branch = rw_b
+[submodule "DRAM_Row_Hammer_Test/dependencies/liteeth"]
+	path = DRAM_Row_Hammer_Test/dependencies/liteeth
+	url = https://github.com/enjoy-digital/liteeth
+[submodule "DRAM_Row_Hammer_Test/dependencies/liteiclink"]
+	path = DRAM_Row_Hammer_Test/dependencies/liteiclink
+	url = https://github.com/enjoy-digital/liteiclink
+[submodule "DRAM_Row_Hammer_Test/dependencies/litepcie"]
+	path = DRAM_Row_Hammer_Test/dependencies/litepcie
+	url = https://github.com/enjoy-digital/litepcie
+[submodule "DRAM_Row_Hammer_Test/dependencies/litescope"]
+	path = DRAM_Row_Hammer_Test/dependencies/litescope
+	url = https://github.com/enjoy-digital/litescope
+[submodule "DRAM_Row_Hammer_Test/dependencies/migen"]
+	path = DRAM_Row_Hammer_Test/dependencies/migen
+	url = https://github.com/m-labs/migen
