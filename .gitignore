@@ -1,2 +1,4 @@
-./DRAM_Row_Hammer_Test/riscv64-unknown-elf-gcc-10.1.0-2020.08.2-x86_64-linux-ubuntu14.tar.gz
-./DRAM_Row_Hammer_Test/riscv64-unknown-elf-gcc-10.1.0-2020.08.2-x86_64-linux-ubuntu14/
+riscv64-unknown-elf-gcc-10.1.0-2020.08.2-x86_64-linux-ubuntu14.tar.gz
+riscv64-unknown-elf-gcc-10.1.0-2020.08.2-x86_64-linux-ubuntu14
+.pyenv
+env.sh
