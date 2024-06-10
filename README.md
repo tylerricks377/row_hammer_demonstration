@@ -1,1 +1,10 @@
-# dram_row_hammer_test
+# DRAM Row Hammer Test
+
+A simple DDR Rowhammer testing program.
+
+
+
+
+
+
+
