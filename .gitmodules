@@ -21,3 +21,15 @@
 [submodule "DRAM_Row_Hammer_Test/dependencies/migen"]
 	path = DRAM_Row_Hammer_Test/dependencies/migen
 	url = https://github.com/m-labs/migen
+[submodule "DRAM_Row_Hammer_Test/dependencies/litex-boards"]
+	path = DRAM_Row_Hammer_Test/dependencies/litex-boards
+	url = https://github.com/litex-hub/litex-boards
+[submodule "DRAM_Row_Hammer_Test/dependencies/pythondata-cpu-vexriscv_smp"]
+	path = DRAM_Row_Hammer_Test/dependencies/pythondata-cpu-vexriscv_smp
+	url = https://github.com/litex-hub/pythondata-cpu-vexriscv_smp
+[submodule "DRAM_Row_Hammer_Test/dependencies/pythondata-software-picolibc"]
+	path = DRAM_Row_Hammer_Test/dependencies/pythondata-software-picolibc
+	url = https://github.com/litex-hub/pythondata-software-picolibc
+[submodule "DRAM_Row_Hammer_Test/dependencies/pythondata-cpu-vexriscv"]
+	path = DRAM_Row_Hammer_Test/dependencies/pythondata-cpu-vexriscv
+	url = https://github.com/litex-hub/pythondata-cpu-vexriscv.git
