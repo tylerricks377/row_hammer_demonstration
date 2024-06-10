@@ -48,3 +48,21 @@
 [submodule "DRAM_Row_Hammer_Test/dependencies/pythondata-cpu-naxriscv"]
 	path = DRAM_Row_Hammer_Test/dependencies/pythondata-cpu-naxriscv
 	url = https://github.com/litex-hub/pythondata-cpu-naxriscv
+[submodule "DRAM_Row_Hammer_Test/dependencies/litejesd204b"]
+	path = DRAM_Row_Hammer_Test/dependencies/litejesd204b
+	url = https://github.com/enjoy-digital/litejesd204b
+[submodule "DRAM_Row_Hammer_Test/dependencies/pythondata-misc-tapcfg"]
+	path = DRAM_Row_Hammer_Test/dependencies/pythondata-misc-tapcfg
+	url = https://github.com/litex-hub/pythondata-misc-tapcfg
+[submodule "DRAM_Row_Hammer_Test/dependencies/pythondata-misc-usb_ohci"]
+	path = DRAM_Row_Hammer_Test/dependencies/pythondata-misc-usb_ohci
+	url = https://github.com/litex-hub/pythondata-misc-usb_ohci
+[submodule "DRAM_Row_Hammer_Test/dependencies/litesata"]
+	path = DRAM_Row_Hammer_Test/dependencies/litesata
+	url = https://github.com/enjoy-digital/litesata
+[submodule "DRAM_Row_Hammer_Test/dependencies/litesdcard"]
+	path = DRAM_Row_Hammer_Test/dependencies/litesdcard
+	url = https://github.com/enjoy-digital/litesdcard
+[submodule "DRAM_Row_Hammer_Test/dependencies/litespi"]
+	path = DRAM_Row_Hammer_Test/dependencies/litespi
+	url = https://github.com/litex-hub/litespi
