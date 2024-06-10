@@ -1,4 +1,4 @@
--e dependencies/migen
+dependencies/migen
 -e dependencies/pythondata-software-picolibc
 -e dependencies/pythondata-software-compiler_rt
 -e dependencies/litex
