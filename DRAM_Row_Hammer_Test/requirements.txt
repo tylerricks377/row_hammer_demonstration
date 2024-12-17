@@ -10,6 +10,7 @@ dependencies/migen
 -e dependencies/litescope
 -e dependencies/litejesd204b
 -e dependencies/litex-boards
+-e dependencies/litespi
 -e dependencies/pythondata-misc-tapcfg
 -e dependencies/pythondata-misc-usb_ohci
 -e dependencies/pythondata-cpu-lm32
