@@ -4,9 +4,6 @@
 [submodule "DRAM_Row_Hammer_Test/dependencies/liteiclink"]
 	path = DRAM_Row_Hammer_Test/dependencies/liteiclink
 	url = https://github.com/enjoy-digital/liteiclink
-[submodule "DRAM_Row_Hammer_Test/dependencies/litepcie"]
-	path = DRAM_Row_Hammer_Test/dependencies/litepcie
-	url = https://github.com/enjoy-digital/litepcie
 [submodule "DRAM_Row_Hammer_Test/dependencies/litescope"]
 	path = DRAM_Row_Hammer_Test/dependencies/litescope
 	url = https://github.com/enjoy-digital/litescope
@@ -49,15 +46,10 @@
 [submodule "DRAM_Row_Hammer_Test/dependencies/pythondata-misc-usb_ohci"]
 	path = DRAM_Row_Hammer_Test/dependencies/pythondata-misc-usb_ohci
 	url = https://github.com/litex-hub/pythondata-misc-usb_ohci
-[submodule "DRAM_Row_Hammer_Test/dependencies/litesata"]
-	path = DRAM_Row_Hammer_Test/dependencies/litesata
-	url = https://github.com/enjoy-digital/litesata
+	ignore = dirty
 [submodule "DRAM_Row_Hammer_Test/dependencies/litesdcard"]
 	path = DRAM_Row_Hammer_Test/dependencies/litesdcard
 	url = https://github.com/enjoy-digital/litesdcard
-[submodule "DRAM_Row_Hammer_Test/dependencies/litespi"]
-	path = DRAM_Row_Hammer_Test/dependencies/litespi
-	url = https://github.com/litex-hub/litespi
 [submodule "DRAM_Row_Hammer_Test/dependencies/litex"]
 	path = DRAM_Row_Hammer_Test/dependencies/litex
 	url = https://github.com/tylerricks377/litex

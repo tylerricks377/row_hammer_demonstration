@@ -40,12 +40,7 @@ $(PYTHON_VENV)/dependencies_installed.txt: | env.sh
 	. ./env.sh && pip install -r ./requirements.txt
 	@echo Installed dependencies on $$(date). > $(PYTHON_VENV)/dependencies_installed.txt
 
-
-move_target_platform:
-	cd dependencies/litex-boards/litex_boards/targets/ && rm antmicro_datacenter_ddr4_test_board.py
-	cp ./mod_target/antmicro_datacenter_ddr4_test_board.py dependencies/litex-boards/litex_boards/targets/
-
-deps: $(PYTHON_VENV)/dependencies_installed.txt move_target_platform
+deps: $(PYTHON_VENV)/dependencies_installed.txt
 
 # Build SoC.
 build: deps | env.sh
