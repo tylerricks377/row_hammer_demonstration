@@ -58,3 +58,6 @@
 	path = DRAM_Row_Hammer_Test/dependencies/litedram
 	url = https://github.com/tylerricks377/litedram
 	branch = rw_b
+[submodule "DRAM_Row_Hammer_Test/dependencies/litespi"]
+	path = DRAM_Row_Hammer_Test/dependencies/litespi
+	url = https://github.com/litex-hub/litespi
