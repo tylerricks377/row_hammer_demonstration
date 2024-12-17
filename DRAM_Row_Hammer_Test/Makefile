@@ -1,5 +1,5 @@
 
-PYTHON_VENV = .pyenv
+PYTHON_VENV = venv
 VIVADO_LOCATION ?= /tools/Xilinx/Vivado
 VIVADO_VERSION ?= $$(ls -d $(VIVADO_LOCATION)/*.* | tr / \\n | tail -n 1)
 RISCV_TOOLCHAIN = riscv64-unknown-elf-gcc-10.1.0-2020.08.2-x86_64-linux-ubuntu14
@@ -24,7 +24,7 @@ $(RISCV_TOOLCHAIN):
 
 toolchain: $(RISCV_TOOLCHAIN)
 
-# Writing environment configuration to script.
+# Write environment configuration to script.
 env.sh: $(PYTHON_VENV) $(RISCV_TOOLCHAIN)
 	echo 'alias source=. # So vivado and make work together.' > ./env.sh
 	echo '. $(PYTHON_VENV)/bin/activate' >> ./env.sh
@@ -34,7 +34,7 @@ env.sh: $(PYTHON_VENV) $(RISCV_TOOLCHAIN)
 env: env.sh
 	@echo To use the environment in your current shell use: '`. env.sh`'
 
-# Installing build dependencies.
+# Install build dependencies.
 $(PYTHON_VENV)/dependencies_installed.txt: | env.sh
 	git submodule update --init --recursive dependencies
 	. ./env.sh && pip install -r ./requirements.txt
@@ -47,12 +47,12 @@ move_target_platform:
 
 deps: $(PYTHON_VENV)/dependencies_installed.txt move_target_platform
 
-# Building SoC.
+# Build SoC.
 build: deps | env.sh
 	. ./env.sh; \
 	python $(PYTHON_FLAGS) ./dependencies/litex-boards/litex_boards/targets/$(BUILD_TARGET) --build $(BUILD_FLAGS)
 
-# Loading Design
+# Load Design
 load: | env.sh
 	. ./env.sh; \
 	python $(PYTHON_FLAGS) ./dependencies/litex-boards/litex_boards/targets/$(BUILD_TARGET) --load
