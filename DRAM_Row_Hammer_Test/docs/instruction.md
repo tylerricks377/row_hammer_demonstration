@@ -1,3 +1,5 @@
+# Usage
+
 Source the virtual environment and Vivado, or source the shell script:
 
 ```
