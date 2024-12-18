@@ -24,18 +24,15 @@ $(RISCV_TOOLCHAIN):
 
 toolchain: $(RISCV_TOOLCHAIN)
 
-# Write environment configuration to script.
-env.sh: $(PYTHON_VENV) $(RISCV_TOOLCHAIN)
-	echo 'alias source=. # So vivado and make work together.' > ./env.sh
+# Source settings64.sh (vivado) and virtual environment in one script.
+env: $(PYTHON_VENV) $(RISCV_TOOLCHAIN)
+	echo 'alias source=. > ./env.sh
 	echo '. $(PYTHON_VENV)/bin/activate' >> ./env.sh
 	echo ". $(VIVADO_LOCATION)/$(VIVADO_VERSION)/settings64.sh" >> ./env.sh
 	echo 'export PATH="$$PATH:$$(pwd)/$(RISCV_TOOLCHAIN)/bin"' >> ./env.sh
 
-env: env.sh
-	@echo To use the environment in your current shell use: '`. env.sh`'
-
-# Install build dependencies.
-$(PYTHON_VENV)/dependencies_installed.txt: | env.sh
+# Install dependencies.
+$(PYTHON_VENV)/dependencies_installed.txt: | env
 	git submodule update --init --recursive dependencies
 	. ./env.sh && pip install -r ./requirements.txt
 	@echo Installed dependencies on $$(date). > $(PYTHON_VENV)/dependencies_installed.txt
