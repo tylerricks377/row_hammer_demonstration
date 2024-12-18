@@ -4,7 +4,7 @@ VIVADO_LOCATION ?= /tools/Xilinx/Vivado
 VIVADO_VERSION ?= $$(ls -d $(VIVADO_LOCATION)/*.* | tr / \\n | tail -n 1)
 RISCV_TOOLCHAIN = riscv64-unknown-elf-gcc-10.1.0-2020.08.2-x86_64-linux-ubuntu14
 PYTHON_FLAGS =
-BUILD_TARGET = antmicro_datacenter_ddr4_test_board.py
+BUILD_TARGET ?= digilent_nexys_video.py
 BUILD_FLAGS =
 
 
@@ -40,12 +40,12 @@ $(PYTHON_VENV)/dependencies_installed.txt: | env
 deps: $(PYTHON_VENV)/dependencies_installed.txt
 
 # Build SoC.
-build: deps | env.sh
+build: deps | env
 	. ./env.sh; \
 	python $(PYTHON_FLAGS) ./dependencies/litex-boards/litex_boards/targets/$(BUILD_TARGET) --build $(BUILD_FLAGS)
 
 # Load Design
-load: | env.sh
+load: | env
 	. ./env.sh; \
 	python $(PYTHON_FLAGS) ./dependencies/litex-boards/litex_boards/targets/$(BUILD_TARGET) --load
 
