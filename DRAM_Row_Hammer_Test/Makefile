@@ -26,7 +26,7 @@ toolchain: $(RISCV_TOOLCHAIN)
 
 # Source settings64.sh (vivado) and virtual environment in one script.
 env: $(PYTHON_VENV) $(RISCV_TOOLCHAIN)
-	echo 'alias source=. > ./env.sh
+	echo 'alias source=.' > ./env.sh
 	echo '. $(PYTHON_VENV)/bin/activate' >> ./env.sh
 	echo ". $(VIVADO_LOCATION)/$(VIVADO_VERSION)/settings64.sh" >> ./env.sh
 	echo 'export PATH="$$PATH:$$(pwd)/$(RISCV_TOOLCHAIN)/bin"' >> ./env.sh
