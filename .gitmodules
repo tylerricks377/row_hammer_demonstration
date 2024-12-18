@@ -50,10 +50,6 @@
 [submodule "DRAM_Row_Hammer_Test/dependencies/litesdcard"]
 	path = DRAM_Row_Hammer_Test/dependencies/litesdcard
 	url = https://github.com/enjoy-digital/litesdcard
-[submodule "DRAM_Row_Hammer_Test/dependencies/litex"]
-	path = DRAM_Row_Hammer_Test/dependencies/litex
-	url = https://github.com/tylerricks377/litex
-	branch = rw_b
 [submodule "DRAM_Row_Hammer_Test/dependencies/litedram"]
 	path = DRAM_Row_Hammer_Test/dependencies/litedram
 	url = https://github.com/tylerricks377/litedram
@@ -61,3 +57,7 @@
 [submodule "DRAM_Row_Hammer_Test/dependencies/litespi"]
 	path = DRAM_Row_Hammer_Test/dependencies/litespi
 	url = https://github.com/litex-hub/litespi
+[submodule "DRAM_Row_Hammer_Test/dependencies/litex"]
+	path = DRAM_Row_Hammer_Test/dependencies/litex
+	url = https://github.com/tylerricks377/litex
+	branch = rw_b
